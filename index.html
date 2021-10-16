@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title> DiegoFLIX | Mural de Filmes - Imersão DEV (Alura) </title>
+</head>
+<body onload=listarFilme()>
+    <div class="container">
+        <h1 class="page-title"> DiegoFlix </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+        
+        <div class="form-wrapper">
+            <div class="add_Filme">
+                <p class="page-subtitle"> Qual seu filme favorito? </p>
+                <input type="text" id="nomeFilme" name="filme" placeholder="Nome do filme...">
+                <input type="text" id="filme" name="filme" placeholder="Endereço da imagem...">
+          
+                <button onClick="verificarLink()" class="btAdicionar">Adicionar Filme</button>
+            </div>
+        
+            <div class="del_Filme">
+                <p class="page-subtitle">Deseja deletar um filme do mural ?</p>
+                <select name="muralRemover" id="muralRemover"></select>
+                <button onClick="removerFilme()" class="btDeletar">Remover Filme</button>      
+            </div>
+            
+            <h2 id="mensagem"></h2>
+        </div>
+        
+        <div id="listaFilmes"></div>
+      
+        <a href="https://alura.com.br/" target="_blank">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
